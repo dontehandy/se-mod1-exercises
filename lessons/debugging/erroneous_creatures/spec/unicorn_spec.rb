@@ -1,10 +1,10 @@
-require '.lib/unicorn'
+require './lib/unicorn' #dont forget the slash
 
-RSpec.describe Unicorn do
-  xit "has a name" do
-    unicorn = Unicorn.new("Robert")
+RSpec.describe Unicorn do #syntax to create a test
+  it "has a name" do  
+    unicorn = Unicorn.new("Robert") #set up of the thing to test
 
-    expect(unicorn.name).to eq("Robert")
+    expect(unicorn.name).to eq("Robert") #execute - name method on unicorn instance from Unicorn class
   end
 
   xit "is white by default" do

@@ -43,10 +43,10 @@ RSpec.describe Bag do
   it 'contains candies and candies have a type' do
     bag = Bag.new
     bag.add_candy(Candy.new("Hershey's Kisses"))
-    # You usually don't want to chain a bunch of different
-    # types of things together like this.
-    # We'll talk about it more in a few weeks.
-    # It's important to understand how these methods work, though.
+    #bag is the instance of the Bag class
+    #.add_candy is the method that adds a candy object to the bag
+    #Candy.new with the argument of "Hershey's Kisses" creates a new instance of the Candy class
+    #() are used to pass an argument to the method
     type = bag.candies.first.type
 
     expect(type).to eq("Hershey's Kisses")

@@ -1,3 +1,6 @@
+#this is an interaction pattern, not a test
+#the purpose of this pattern is to show how the code is used in the terminal
+
 ```ruby
 pry(main)> require './lib/student'
 => true

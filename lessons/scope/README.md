@@ -8,3 +8,4 @@ The `painter_spec.rb` file contains tests that may or may not have some scope is
 1. Unskip the test and run the test file
 1. See if the output was what you expected
 1. Add the skip back into the test so that you only see output from one test at a time.
+

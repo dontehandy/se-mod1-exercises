@@ -33,3 +33,4 @@ In week 6, students will participate in the Final Independent Challenge (also ca
 In order to practice for the Final Independent Challenge in week 6, students will be given a weekly practice Independent Challenge starting in week 2. They will be submitted using a Github Pull Request, and instructors will give feedback in various forms. These are not formal assessments, but an opportunity for the student to practice their problem solving skills and receive feedback from instructors. Students are expected to complete the first three iterations.
 
 Students can find examples of Independent Challenges in the [Practice Independent Challenges](./practice_independent_challenges) directory.
+

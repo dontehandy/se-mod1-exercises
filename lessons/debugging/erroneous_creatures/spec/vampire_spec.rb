@@ -71,3 +71,10 @@ RSpec.describe Vampire do
     expect(vampire.thirsty?).to eq(true)
   end
 end
+
+
+
+# read from bottom of terminal
+# read 'failed examples' to see what is failing and where
+# x problems out to isolate to be sure other code is working
+

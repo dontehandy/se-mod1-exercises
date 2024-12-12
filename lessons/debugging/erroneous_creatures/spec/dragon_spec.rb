@@ -1,4 +1,8 @@
-require'./lib/dragon'
+require './lib/dragon'
+
+#select all it at once by 
+#holding down the option key and 
+#clicking on the first it and then dragging to the last it
 
 RSpec.describe Dragon do
   it "has a name" do
@@ -84,3 +88,10 @@ RSpec.describe Dragon do
     expect(dragon.breathe_fire).to eq(false)
   end
 end
+
+
+#pending means that its x'd out and not running
+#failures are in red
+#errors are in red
+#examples are in green
+

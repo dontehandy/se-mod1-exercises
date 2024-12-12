@@ -1,3 +1,8 @@
+#15 mins left
+#try explaining someone else's code
+
+
+
 class Hobbit
 
   attr_reader :name, :disposition
@@ -15,7 +20,7 @@ class Hobbit
   end
 
   def adult?
-    @agee >= 32
+    @age > 32 #age spelled wrong #logic error with = instead of > 
   end
 
   def play

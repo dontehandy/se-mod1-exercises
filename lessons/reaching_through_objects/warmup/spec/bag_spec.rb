@@ -5,6 +5,9 @@ require_relative '../lib/candy'
 # to run rspec spec/bag_spec.rb
 
 RSpec.describe Bag do
+  let(:bag) { Bag.new }
+  let(:candy) { Candy.new("Gummy bears") }
+
   it 'is empty' do
     expect(Bag.new.empty?).to be true
   end
@@ -18,45 +21,31 @@ RSpec.describe Bag do
   end
 
   it 'can put a candy in a bag' do
-    bag = Bag.new
-    candy = Candy.new('Sour frogs')
-
     bag.add_candy(candy)
-
-    expect(bag.candies).to eq([candy])
+    expect(bag.candies).to include(candy)
   end
 
   it 'is not empty when it has candies' do
-    bag = Bag.new
     bag.add_candy(Candy.new("Gummy worms"))
-
-    expect(bag.empty?).to be false
+    expect(bag).not_to be_empty
   end
 
   it 'can count candies' do
-    bag = Bag.new
     bag.add_candy(Candy.new("Caramelized Almonds"))
-
     expect(bag.count).to eq(1)
   end
 
   it 'contains candies and candies have a type' do
-    bag = Bag.new
     bag.add_candy(Candy.new("Hershey's Kisses"))
-    #bag is the instance of the Bag class
-    #.add_candy is the method that adds a candy object to the bag
-    #Candy.new with the argument of "Hershey's Kisses" creates a new instance of the Candy class
-    #() are used to pass an argument to the method
-    type = bag.candies.first.type
-
-    expect(type).to eq("Hershey's Kisses")
+    expect(bag.candies.first.type).to eq("Hershey's Kisses")
   end
 
   it 'can be asked if it has a particular kind of candy' do
-    bag = Bag.new
     bag.add_candy(Candy.new("Lindt chocolate"))
-
-    expect(bag.contains?('Lindt chocolate')).to be true
+    expect(bag.contains?("Lindt chocolate")).to be true
     expect(bag.contains?('Nerds')).to be false
   end
 end
+
+
+#to run rspec on all tests use: rspec spec

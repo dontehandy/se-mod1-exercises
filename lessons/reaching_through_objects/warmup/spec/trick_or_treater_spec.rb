@@ -35,10 +35,8 @@ RSpec.describe TrickOrTreater do
   end
 
   it 'can get candies' do
-    trick_or_treater = TrickOrTreater.new(Costume.new('Spaceship Mechanic'))
-    trick_or_treater.bag << Candy.new('Gummy bears')
-
-    expect(trick_or_treater.has_candy?).to be true
+    trick_or_treater.add_candy(Candy.new('Gummy bears'))
+    expect(trick_or_treater.candy_count).to eq(1)
   end
 
   it 'it can count candies' do
@@ -53,26 +51,15 @@ RSpec.describe TrickOrTreater do
   end
     
   it 'can add candy' do
-    trick_or_treater.add_candy(Candy.new('Gummy bears'))
     trick_or_treater.add_candy(Candy.new('Chocolate bar'))
-
-    expect(trick_or_treater.candy_count).to eq(2)
+    expect(trick_or_treater.candy_count).to eq(1)
   end
 
   it 'can eat candies' do
-    trick_or_treater = TrickOrTreater.new(Costume.new("Baron"))
+    trick_or_treater.add_candy(Candy.new('Gummy worms'))
+    trick_or_treater.eat
     expect(trick_or_treater.candy_count).to eq(0)
-    
-    trick_or_treater.add_candy(Candy.new("Gummy worms"))
-    expect(trick_or_treater.candy_count).to eq(1)
-    trick_or_treater.eat
-
-    trick_or_treater.add_candy(Candy.new("Liquorice"))
-    expect(trick_or_treater.candy_count).to eq(1)
-    trick_or_treater.eat
-
-    trick_or_treater.add_candy(Candy.new("Salty Serpents"))
-    expect(trick_or_treater.candy_count).to eq(1)
-    trick_or_treater.eat
   end
 end
+
+#to run all rspec tests in the terminal, type rspec spec

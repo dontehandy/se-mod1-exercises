@@ -37,7 +37,7 @@ class TrickOrTreater
   end
 
   def add_candy(candy)
-    @bag << candy
+    @bag.add_candy(candy)
   end
 end
 

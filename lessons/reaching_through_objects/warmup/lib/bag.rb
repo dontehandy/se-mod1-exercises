@@ -22,14 +22,18 @@ class Bag #created a bag class
   end
 
   def count
-    @candies.size #prints the number of candies in the array
+    @candies.count #prints the number of candies in the array
   end
 
-  def take(number)
-    @candies.pop(number).first
+  def take(amount)
+    @candies.pop(amount)
   end
 
-  def <<(candy)
+  def add_candy(candy)
     @candies << candy #adds a candy object to the array of candies
+  end
+
+  def contains?(type)
+    @candies.any? { |candy| candy.type == type }
   end
 end

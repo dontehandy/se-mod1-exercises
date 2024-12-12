@@ -2,6 +2,8 @@ require 'rspec'
 require_relative '../lib/bag'
 require_relative '../lib/candy'
 
+# to run rspec spec/bag_spec.rb
+
 RSpec.describe Bag do
   it 'is empty' do
     expect(Bag.new.empty?).to be true

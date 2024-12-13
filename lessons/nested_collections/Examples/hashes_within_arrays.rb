@@ -1,5 +1,5 @@
 food_feelings = [{:pizza => "tasty"}, {:calzone => "also tasty"}]
-#name or array assigned two hashes within an array
+#food_feelings is the name of the array
 #considered a nested array with 2 elements
 #each element is a hash with a key and value
 #the key is a symbol (:pizza) and the value is a string "tasty"

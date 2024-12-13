@@ -33,7 +33,7 @@ pets = {:dog => {:name => "Chance", :weight => "45 pounds"},
 5. how can I add :age => 3 to the value of the key :dog - pets[:dog][:age] = 3
 # - to add :age => 3 to the value of the key :dog, we would use pets[:dog][:age] = 3
 # - [] indicate the element that we are adding to the hash
-# - [:dog] is the key that we are adding the value to
+# - [:dog] is the key that we are adding the value to, [:age] is the key that we are adding
 # - = 3 is the new value that we are assigning to the key :age
 
 

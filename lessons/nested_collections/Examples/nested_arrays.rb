@@ -24,7 +24,7 @@ numbers = [[1, 2, 3], [4, 5, 6]]
 #() indicate the element that we are adding to the array and is an array because the element is an array
 #[] indicate the element that we are adding to the array and is an array because the element is an array
 
-5. What element does numbers[0] return?   [1,2,3]
+# 5. What element does numbers[0] return?   [1,2,3]
 # - numbers is the name of the array that we are accessing
 # - [] indicate that we are accessing an element in the array by its index position
 # - 0 is the index position of the first element in the array

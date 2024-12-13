@@ -25,6 +25,8 @@ food_feelings = [{:pizza => "tasty"}, {:calzone => "also tasty"}]
 # - [] indicate the element that we are changing in the array
 # - [:calzone] is the key that we are changing the value of
 # - = "super delicious" is the new value that we are assigning to the key :calzone
+# - can only manipulate the value of a key in a hash, not the key itself
+
 
 
 

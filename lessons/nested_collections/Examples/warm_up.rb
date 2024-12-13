@@ -19,9 +19,9 @@
 
 animals = {"dogs" => 3, "cats" => 5, "iguanas" => 2}
 #hash #assignment operator {<- starts hash, "dogs" <- key, => hash rocket for association , 3 <-value, } <- ends hash
-# 1. return the value of dogs
-# 2. add 3 parakeets
-# 3. increase the amount of cats by 2
+1. return the value of dogs
+2. add 3 parakeets
+3. increase the amount of cats by 2
 
 #to find the answer without using pry, you can use the following code:
 #return the amount of dogs: animals["dogs"] - animals is the hash, and "dogs" is the key, { } indicates a hash
@@ -30,7 +30,7 @@ animals = {"dogs" => 3, "cats" => 5, "iguanas" => 2}
 
 pet_names = ["Fela", "Spot", "Patch", "Willy"]
 
-# 1. add “Claude” to the end of the array - #pet_names.push('Claude') - push adds an element to the end of an array
+1. add “Claude” to the end of the array - #pet_names.push('Claude') - push adds an element to the end of an array
 
 - pet_names is the name of the array
 - push is the method that adds an element to the end of an array

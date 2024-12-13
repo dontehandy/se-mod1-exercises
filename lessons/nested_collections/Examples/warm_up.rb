@@ -32,29 +32,30 @@ pet_names = ["Fela", "Spot", "Patch", "Willy"]
 
 # 1. add “Claude” to the end of the array - #pet_names.push('Claude') - push adds an element to the end of an array
 
-- 
--
--
+- pet_names is the name of the array
+- push is the method that adds an element to the end of an array
+- 'Claude' is the element that is being added to the end of the array
 
 
 # 2. access the first name in the list - #pet_names[0] - 0 is the index of the first element in an array
 
--
--
--
+-pet_names is the name of the array that we are accessing
+-[] indicate that we are accessing an element in the array by its index   
+- 0 is the index position of the first element in the array, could also use pet_names.first
 
 
 # 3. access the last name in the list - #pet_names[-1] - -1 is the index of the last element in an array
 
--
--
--
+# - pet_names is the name of the array that we are accessing
+# - [] indicate that we are accessing an element in the array by its index position
+# - -1 is the index position of the last element in the array, could also use pet_names.last
 
 # 4. remove “Fela” from the list - #pet_names.delete('Fela') - delete removes an element from an array
 
--
--
--
+# - pet_names is the name of the array that we are removing an element from
+# - .delete is the method that removes an element from an array
+# - ('Fela') is the element that we are removing from the array
+# - () indicate the element that we are removing from the array and is a string because the element is a string
 
 
 

@@ -8,8 +8,8 @@ RSpec.describe Bag do
   let(:bag) { Bag.new }
   let(:candy) { Candy.new("Gummy bears") }
 
-  it 'is empty' do
-    expect(Bag.new.empty?).to be true
+  it 'is empty' do #test checks if the bag array is empty
+    expect(Bag.new.empty?).to be true 
   end
 
   it 'can count the candy in an empty bag' do

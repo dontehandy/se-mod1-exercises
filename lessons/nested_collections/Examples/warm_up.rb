@@ -10,3 +10,7 @@ pet_names = ["Fela", "Spot", "Patch", "Willy"]
 # 2. access the first name in the list
 # 3. access the last name in the list
 # 4. remove “Fela” from the list
+
+
+#goodmorning.rb
+

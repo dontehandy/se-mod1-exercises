@@ -4,7 +4,7 @@ require_relative '../lib/bag'
 require_relative '../lib/candy'
 require_relative '../lib/trick_or_treater'
 
-#to run rspec spec/trick_or_treater_spec.rb
+#run rspec spec/trick_or_treater_spec.rb
 
 RSpec.describe TrickOrTreater do
   let(:costume) { Costume.new('Vampire') }
@@ -62,4 +62,7 @@ RSpec.describe TrickOrTreater do
   end
 end
 
-#to run all rspec tests in the terminal, type rspec spec
+#to run all rspec tests in the terminal, 
+
+#type rspec spec
+

@@ -25,8 +25,8 @@ class Bag #created a bag class
     @candies.count #prints the number of candies in the array
   end
 
-  def take(amount)
-    @candies.pop(amount)
+  def take(amount) #method that takes an argument
+    @candies.pop(amount) #removes the last element from the array
   end
 
   def add_candy(candy)

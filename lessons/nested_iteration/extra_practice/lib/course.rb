@@ -10,4 +10,8 @@ class Course
   def add_student(student)
     @students << student
   end
+
+  def groups_represented
+    @students.map(&:group).uniq
+  end #added group represented method to return unique groups represented by students in course
 end

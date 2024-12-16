@@ -48,7 +48,7 @@ denver_biscuit_co = {
     price: "$$",
     hours: [
         {
-            open: [
+            open: #key1 [
                 {
                     is_overnight: false,
                     start: "0800",
@@ -92,8 +92,8 @@ denver_biscuit_co = {
                     day: 6
                 }
             ],
-            hours_type: "REGULAR",
-            is_open_now: true
+            hours_type: #key2 "REGULAR",
+            is_open_now: #key3 true
         }
     ],
     transactions: [
@@ -104,17 +104,19 @@ denver_biscuit_co = {
 
 
 # Challenge 1:
-# Return the name ("Denver Biscuit")
-# Return the rating (4.5)
-# Return a list of accepted transactions (["pickup", "delivery"])
-# Return the first listed category title ("Sandwiches")
-# Return the opening hour on Tuesday (day 1) ("0800")
-# Return the closing hour on Saturday (day 5) ("1500")
-# Return the current open status (is_now_open) (true)
+Return the name ("Denver Biscuit") - # p  denver_biscuit_co[:name]
+# Return the rating (4.5) # p denver_biscuit_co[:rating]
+# Return a list of accepted transactions (["pickup", "delivery"]) # p denver_biscuit_co[:transactions]
+# Return the first listed category title ("Sandwiches") # p denver_biscuit_co[:categories][0][:title]
+# Return the opening hour on Tuesday (day 1) ("0800") # p denver_biscuit_co[:hours][0][:open][1][:start]
+# Return the closing hour on Saturday (day 5) ("1500") # p denver_biscuit_co[:hours][0][:open][5][:end]
+# Return the current open status (is_now_open) (true) # p denver_biscuit_co[:hours][0][:is_open_now]
 
 # Challenge 2: 
-# Get the address, and return it into a readable format. ("3237 E Colfax Ave, Denver, CO 80206" )
-# Return a list of categories this restaurant fits into (["Sandwiches", "Breakfast & Brunch"])
+# Get the address, and return it into a readable format. ("3237 E Colfax Ave, Denver, CO 80206" ) 
+# p "#{denver_biscuit_co[:location][:address1]}, #{denver_biscuit_co[:location][:city]}, #{denver_biscuit_co[:location][:state]} #{denver_biscuit_co[:location][:zip_code}"
+# Return a list of categories this restaurant fits into (["Sandwiches", "Breakfast & Brunch"]) 
+# p denver_biscuit_co[:categories].map { |category| category[:title] }
 
 
 # Challenge 3 (extra spicy): 

@@ -4,6 +4,8 @@ require './lib/student'
 require './lib/course'
 require './lib/school'
 
+#to run rspec spec/school_spec.rb
+
 RSpec.describe School do
   before(:each) do
     # this is the setup for all tests below.
@@ -65,7 +67,7 @@ RSpec.describe School do
       expect(@school.groups.include?(@student1.group)).to eq(true)
     end
 
-    xit 'can assign all students to groups at once' do
+    it 'can assign all students to groups at once' do
       @school.add_course(@course1)
       @school.add_course(@course2)
       @school.add_course(@course3)
@@ -89,7 +91,7 @@ RSpec.describe School do
       end
     end
 
-    xit 'can list all students by name' do
+    it 'can list all students by name' do
       @school.add_course(@course1)
       @school.add_course(@course2)
       @school.add_course(@course3)
@@ -107,7 +109,7 @@ RSpec.describe School do
       expect(@school.names).to eq(expected)
     end
 
-    xit 'can return all students by group' do
+    it 'can return all students by group' do
       @school.add_course(@course1)
       @school.add_course(@course2)
       @school.add_course(@course3)
